@@ -9,12 +9,13 @@
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<header>
+	<header id="inicio">
 		<div class="contenedor">
 			<nav class="menu">
+				<a href="#inicio">Inicio</a>
 				<a href="#acerca-de">Acerca de</a>
 				<a href="#experiencia">Habilidades</a>
-				<a href="#trabajos">Trabajos</a>
+				<a href="#trabajos">Proyectos</a>
 				<a href="#redes-sociales">Contacto</a>
 			</nav>
 			
@@ -30,10 +31,31 @@
 	<section class="main">
 		<section class="acerca-de" id="acerca-de">
 			<div class="contenedor">
+				<div class="contenedor-imagen">
+					<img src="img/fondo.jpg" alt="Programador">
+				</div>
 				<div class="texto">
 					<h3 class="titulo">Acerca de</h3>
-					<p>Hola, soy Josepablo un desarrollador capaz de resolver problemas, crear proyectos y dar seguimiento 
-					a proyectos previamente creados, para esto utilizo tecnologías tales como HTML, CSS, Git, JavaScript y React.</p>
+					<div class="informacion">
+						<div class="datos_1">
+							<p>Hola, me llamo Josepablo y soy un desarrollador Front-End, 
+								me gusta mucho el ajedrez y la programación, puedo trabajar
+								con cualquier persona sin importar que seamos diferentes,
+								practico la empatía, humildad y siempre estoy dispuesto
+								a aprender para mejorar.</p>
+						</div>
+						<div class="datos_2">
+							<p><i>Nombre:</i><br> Josepablo Ellis</p>
+							<p><i>Correo:</i><br> ellisjosepablo99@gmail.com</p>
+							<p><i>Teléfono:</i><br> +502 3727-6911</p>
+							<p><i>País:</i><br> Guatemala</p>
+							<p><i>Español:</i><br> Nativo</p>
+							<p><i>Inglés:</i><br> B1</p>
+							<div class="boton">
+								<a class="Cv" href="img/CV Josepablo Ellis.pdf" target="_blank"> Descargar  CV </a><i class="fa-solid fa-arrow-right"></i>
+							</div>
+						</div>	
+					</div>
 				</div>
 			</div>
 		</section>
@@ -45,11 +67,11 @@
 				</div>
 				<div class="carrusel">
 					<div class="carrusel-items">
-						<div class="carrusel-item">
+						<!-- <div class="carrusel-item">
 							<a href="https://www.google.com/search?q=git&rlz=1C1CHZN_esGT973GT973&sxsrf=ALiCzsa_wZfAvba246scSY_gXCx-tmXZ-g%3A1666200549025&ei=5TNQY6uSAbKTwbkPh7KS6A0&ved=0ahUKEwjrmOXe6Oz6AhWySTABHQeZBN0Q4dUDCA8&uact=5&oq=git&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCgguEMcBENEDECcyCggAELEDEIMBEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQM6EAguELEDEIMBEMcBENEDEEM6BQgAEIAEOgsIABCABBCxAxCDAToHCAAQsQMQQzoLCC4QgAQQsQMQ1AI6CAguEIAEELEDSgQITRgBSgQIQRgASgQIRhgAUABYuQFg-AVoAHABeACAAYYBiAH7ApIBAzAuM5gBAKABAcABAQ&sclient=gws-wiz" target="_blank">
 								<i class="fa-brands fa-git-alt"></i>
 							</a>
-						</div>
+						</div> -->
 						<div class="carrusel-item">
 							<a href="https://www.google.com/search?q=Html&rlz=1C1CHZN_esGT973GT973&sxsrf=ALiCzsZYpQD-lhyMbsz53II5dNnuPGohCg%3A1666200409152&ei=WTNQY53iCJeGwbkP8YirsAk&ved=0ahUKEwjd8ouc6Oz6AhUXQzABHXHECpYQ4dUDCA8&uact=5&oq=Html&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgAEEMyBAgAEEMyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgQIABBDMgUIABCABDoKCC4QxwEQ0QMQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6BQguEIAEOgsIABCABBCxAxCDAToFCAAQsQNKBAhNGAFKBAhBGABKBAhGGABQAFiJCmDxC2gAcAF4AIABhQGIAdADkgEDMC40mAEAoAEBwAEB&sclient=gws-wiz" target="_blank">
 								<i class="fa-brands fa-html5"></i>	
@@ -65,16 +87,16 @@
 								<i class="fa-brands fa-sass"></i>
 							</a>
 						</div>
-						<div class="carrusel-item">
+						<!-- <div class="carrusel-item">
 							<a href="https://www.google.com/search?q=bootstrap&rlz=1C1CHZN_esGT973GT973&sxsrf=ALiCzsZw10VA3s8nUi-eEj49aiNJEWyW6Q%3A1666200768640&ei=wDRQY-LMJsmwkvQPh-KW6A8&oq=bo&gs_lcp=Cgdnd3Mtd2l6EAMYAzIECCMQJzIECCMQJzIECCMQJzIHCAAQsQMQQzIECAAQQzIECAAQQzIKCC4QxwEQ0QMQQzIECAAQQzIECAAQQzIKCAAQsQMQgwEQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEELEDEIMBSgQITRgBSgQIQRgASgQIRhgAUABYe2C8F2gAcAF4AIABgAGIAeYBkgEDMC4ymAEAoAEBwAEB&sclient=gws-wiz" target="_blank">
 								<i class="fa-brands fa-bootstrap"></i>						
 							</a>
-						</div>
-						<div class="carrusel-item">
+						</div> -->
+						<!-- <div class="carrusel-item">
 							<a href="https://www.google.com/search?q=wordpress&rlz=1C1CHZN_esGT973GT973&sxsrf=ALiCzsalB2Mvivy6FyRHmsIpaM89UPMCrA%3A1666200744496&ei=qDRQY8v0HZOHwbkPja2vqAo&oq=word&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIKCAAQsQMQgwEQQzIICAAQgAQQsQMyCgguELEDEIMBEEMyCwgAEIAEELEDEIMBMgUIABCABDIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIFCAAQgAQ6BAgAEEM6BAguEEM6CgguEMcBENEDEENKBAhNGAFKBAhBGABKBAhGGABQAFjaA2C6C2gAcAF4AIABtQGIAaoEkgEDMC40mAEAoAEBwAEB&sclient=gws-wiz" target="_blank">
 								<i class="fa-brands fa-wordpress"></i>
 							</a>
-						</div>
+						</div> -->
 						<div class="carrusel-item">
 							<a href="https://www.google.com/search?q=javascript&rlz=1C1CHZN_esGT973GT973&sxsrf=ALiCzsZuO6IoSaCPmSz4stGPSy_O26CIsQ%3A1666200793921&ei=2TRQY_bkN7HMwbkPhouVeA&oq=ja&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzoLCAAQgAQQsQMQgwE6CAgAEIAEELEDOg4ILhCABBCxAxCDARDUAjoFCAAQgARKBAhNGAFKBAhBGABKBAhGGABQAFheYPQKaABwAXgAgAHLAYgB2AKSAQUwLjEuMZgBAKABAcABAQ&sclient=gws-wiz" target="_blank">
 								<i class="fa-brands fa-square-js"></i>
@@ -97,24 +119,13 @@
 				<div class="contenedor-trabajos">
 					<div class="trabajo">
 						<div class="thumb">
-							<a href="https://exquisite-meerkat-8525de.netlify.app" target="_blank">
-								<img src="img/trabajos/1.png" alt="Lorem Ipsum">
-							</a>
-						</div>
-						<div class="descripcion">
-							<p class="nombre">E-commerce</p>
-							<p class="categoria">HTML - CSS - REACT</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
 							<a href="https://splendid-kelpie-caab73.netlify.app" target="_blank">
 								<img src="img/trabajos/2.png" alt="Lorem Ipsum">
 							</a>
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Pokédex</p>
-							<p class="categoria">HTML - REACT - REDUX</p>
+							<p class="categoria">HTML - CSS - REACT</p>
 						</div>
 					</div>
 					<div class="trabajo">
@@ -125,7 +136,7 @@
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Rick and Morty Wiki</p>
-							<p class="categoria">HTML - REACT - API</p>
+							<p class="categoria">HTML - CSS - REACT</p>
 						</div>
 					</div>
 					<div class="trabajo">
@@ -147,7 +158,7 @@
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Weather app</p>
-							<p class="categoria">HTML - REACT - API</p>
+							<p class="categoria">HTML - CSS - REACT</p>
 						</div>
 					</div>
 					<div class="trabajo">
@@ -158,6 +169,17 @@
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Expenses chart</p>
+							<p class="categoria">HTML - CSS - JAVASCRIPT</p>
+						</div>
+					</div>
+					<div class="trabajo">
+						<div class="thumb">
+							<a href="https://sweet-klepon-f64b9e.netlify.app" target="_blank">
+								<img src="img/trabajos/7.png" alt="Lorem Ipsum">
+							</a>
+						</div>
+						<div class="descripcion">
+							<p class="nombre">QR code component</p>
 							<p class="categoria">HTML - CSS - JAVASCRIPT</p>
 						</div>
 					</div>
@@ -181,9 +203,9 @@
 		<section class="redes-sociales" id="redes-sociales">
 			<div class="contenedor">
 				<a class="Netlify" href="https://app.netlify.com/teams/josepablo333/sites" target="_blank"><i class="fa-solid fa-cloud-arrow-up"></i></a>
-				<a class="Linkedin" href="http://www.linkedin.com/in/josepablo-ellis-a6991a208" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				<a class="Linkedin" href="https://www.linkedin.com/in/josepablo-ellis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 				<a class="Github" href="https://github.com/Josepablo333" target="_blank"><i class="fa-brands fa-github"></i></a>
-				<a class="Cv" href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMES4BoGw&#x2F;view?embed" target="_blank"><i class="fa-solid fa-file"></i></a>
+				<a class="Cv" href="img/CV Josepablo Ellis.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>
 		</section>
 	</footer>
 

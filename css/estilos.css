@@ -5,6 +5,7 @@
   --black: #000000;
   --brown: #c10303;
   --white: #ffffff;
+  --transition: all 0.5s linear;
 }
 
 * {
@@ -53,12 +54,13 @@ header {
   background: var(--black);
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 600px; 
+  height: 600px; 
 }
 
 header .menu { 
   background-color: var(--black);
   padding-top: 5px;
+  padding-right: 40px;
   text-align: right;
   position: fixed;
   width: 100vw;
@@ -67,14 +69,13 @@ header .menu {
   z-index: 2;
 }
 
-
-
 header .menu a {
-  padding: 6px 24px;
+  padding: 6px 14px;
   color: var(--white);
   font-size: 1em;
   display: inline-block;
   text-decoration: none;
+  transition: var(--transition);
 }
 
 header .menu a:hover {
@@ -82,14 +83,12 @@ header .menu a:hover {
  border-radius: 5px;
 }
 
-
 header .contenedor-texto {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 190px 0; 
+  padding-top: 200px;
 }
-
 
 header .contenedor-texto {
   animation-duration: 3s;
@@ -141,6 +140,24 @@ header .contenedor-texto .texto .profesion {
 .main .acerca-de {
   text-align: center; 
   background-color: var(--black);
+  padding-top: 40px;
+}
+
+.main .acerca-de .contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+.main .acerca-de .contenedor .contenedor-imagen {
+  width: 35%;
+  margin: 40px 80px 60px 0px; 
+  padding: 20px 0px;
+}
+
+.main .acerca-de .contenedor .contenedor-imagen img {
+  width: 100%;
+  height: 100%;
+  border-radius:50%;
 }
 
 .main .acerca-de .texto {
@@ -148,35 +165,83 @@ header .contenedor-texto .texto .profesion {
   border-radius: 10px;
   border: 2px solid var(--red);
   color: var(--black);
-  font-weight: 600;
+  font-weight: 50;
   font-size: 1em;
   line-height: 30px;
-  width: 60%;
-  margin: 40px auto 60px auto; 
+  width: 55%;
+  margin: 40px 0px 60px 0px; 
   padding: 20px 0px;
 }
 
 .main .acerca-de .texto .titulo {
-  font-size: 34px;
+  font-size: 40px;
   margin-bottom: 40px;
+  margin-left: 30px;
   line-height: 34px;
   font-weight: 300;
   color: var(--black);
-  text-align: center; 
-
+  text-align: left; 
 }
-.main .acerca-de .texto p {
-  width: 75%;
-  margin: auto;
+
+.main .acerca-de .texto .informacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .acerca-de .texto .informacion .datos_1 {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.main .acerca-de .texto .informacion .datos_2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.main .acerca-de .texto .informacion .datos_2 p {
+  width: 45%;
+  font-weight: 50;
+}
+
+.main .acerca-de .texto .informacion .datos_2 p i {
+  font-weight: bold;
+  font-weight: 600;
+}
+
+.main .acerca-de .texto .boton {
+  width: 150px;
+  height: 30px;
+  margin-top: 15px;
+  text-align: center;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.main .acerca-de .texto .boton:hover {
+  background: var(--brown); 
+} 
+
+.main .acerca-de .texto .boton a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--white);
 }
 
 .main .experiencia {
   background-color: var(--black);
+  padding-top: 20px;
 } 
 
 .main .experiencia .contenedor .title h3{
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 300;
   padding-top: 20px;
   color: var(--white);
 } 
@@ -242,6 +307,7 @@ header .contenedor-texto .texto .profesion {
 
 .main .experiencia .contenedor .carrusel-item:hover {
   transform: scale(1.2);
+  transition: all 0.2s linear;
 }
 
 .main .trabajos {
@@ -254,7 +320,7 @@ header .contenedor-texto .texto .profesion {
 }
 
 .main .trabajos .titulo {
-  font-size: 34px;
+  font-size: 40px;
   line-height: 34px;
   margin-bottom: 60px;
   font-weight: 300;
@@ -311,7 +377,7 @@ footer .contacto {
 }
 
 footer .contacto .titulo {
-  font-size: 34px;
+  font-size: 40px;
   line-height: 34px;
   margin-bottom: 60px;
   font-weight: 300;
@@ -410,15 +476,39 @@ footer .redes-sociales .contenedor .Cv:hover {
   .main .trabajos .contenedor-trabajos .trabajo {
     width: 46%; 
   } 
+
+  .main .acerca-de .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main .acerca-de .contenedor .contenedor-imagen{
+    margin: auto;
+    width: 60%;
+  }
+
+  .main .acerca-de .contenedor .texto .datos_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 @media screen and (max-width: 500px) {
+
+  header { 
+    max-height: 200px;
+  }  
 
   header .menu { 
     display: none;
   }  
 
   header .contenedor-texto {
-    margin: 50px 0px; 
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   header .contenedor-texto .texto .nombre {
